@@ -202,7 +202,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight"
             >
-              Hey, I am a <br />
+              Hey, I am Rohit Shukla, a <br />
               <span className="inline-flex items-center whitespace-nowrap">
                 <span className="text-foreground min-h-[1.2em] font-extrabold">
                   {activeTitle}
@@ -253,7 +253,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent mix-blend-overlay z-10 pointer-events-none"></div>
               <Image 
                 src="/image/proimg.jpeg" 
-                alt="Profile Image" 
+                alt="Rohit Shukla - MERN Stack Developer from Nagpur" 
                 fill 
                 priority
                 className="object-cover" 
@@ -284,7 +284,7 @@ export default function Home() {
                 </strong>
                 , I designed architectures to handle high-frequency mapping
                 telemetry and custom geo-processing algorithms. I build scalable
-                systems with a client-first approach, taking performance and
+                business applications with a client-first approach, taking performance and
                 reliability seriously.
               </p>
             </div>
