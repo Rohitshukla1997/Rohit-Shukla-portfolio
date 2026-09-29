@@ -30,13 +30,19 @@ export const metadata: Metadata = {
     "Nagpur",
     "MongoDB",
     "TypeScript",
-    "JavaScript"
+    "JavaScript",
   ],
   authors: [{ name: "Rohit Shukla", url: "https://rohitshukla.vercel.app/" }],
   creator: "Rohit Shukla",
   publisher: "Rohit Shukla",
   alternates: {
     canonical: "/",
+  },
+
+  verification: {
+    other: {
+      "msvalidate.01": "GXoeimY4ZlKQTYvGhkpeGmNKh5xcH6SMykwHtkrSNhY",
+    },
   },
   openGraph: {
     title: "Rohit Shukla | MERN Stack Developer | React, Next.js & Node.js",
@@ -86,7 +92,8 @@ export default function RootLayout({
     name: "Rohit Shukla",
     jobTitle: "MERN Stack Developer",
     url: "https://rohitshukla.vercel.app/",
-    description: "Rohit Shukla is a MERN Stack / Full Stack Developer specializing in React.js, Next.js, Node.js, Express.js and MongoDB.",
+    description:
+      "Rohit Shukla is a MERN Stack / Full Stack Developer specializing in React.js, Next.js, Node.js, Express.js and MongoDB.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Nagpur",
