@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { ModeToggle } from "@/components/mode-toggle";
 import {
   Briefcase,
-  ExternalLink,
   Mail,
   Phone,
   MapPin,
@@ -18,15 +17,11 @@ import {
   Layers,
   Map,
   ArrowUpRight,
-  Sparkles,
   Menu,
   X,
 } from "lucide-react";
 import {
   portfolioData,
-  Project,
-  Experience,
-  SkillCategory,
 } from "../data/portfolio";
 
 export default function Home() {
@@ -34,7 +29,6 @@ export default function Home() {
   const [titleIdx, setTitleIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [activeTab, setActiveTab] = useState("all");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const { scrollY } = useScroll();
@@ -67,10 +61,14 @@ export default function Home() {
 
     if (!isDeleting && charIdx === currentFullTitle.length) {
       // Pause at full text
+      clearTimeout(typingTimer);
       typingTimer = setTimeout(() => setIsDeleting(true), 1500);
     } else if (isDeleting && charIdx === 0) {
-      setIsDeleting(false);
-      setTitleIdx((prev) => (prev + 1) % portfolioData.titles.length);
+      clearTimeout(typingTimer);
+      typingTimer = setTimeout(() => {
+        setIsDeleting(false);
+        setTitleIdx((prev) => (prev + 1) % portfolioData.titles.length);
+      }, 300); // small pause before typing next text
     }
 
     return () => clearTimeout(typingTimer);
