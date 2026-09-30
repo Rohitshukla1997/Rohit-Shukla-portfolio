@@ -412,7 +412,7 @@ export default function Home() {
                         href={project.link || "#"}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-foreground p-1.5 rounded-lg hover:bg-slate-800 transition-all"
+                        className="text-muted-foreground hover:text-foreground p-1.5 rounded-lg hover:bg-white/30 dark:hover:bg-white/20 hover:backdrop-blur-md hover:shadow-lg hover:shadow-black/10 hover:-translate-y-1 transition-all duration-300"
                         aria-label="External Link"
                       >
                         <ArrowUpRight className="w-5 h-5" />
