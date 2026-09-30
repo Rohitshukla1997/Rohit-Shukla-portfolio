@@ -49,7 +49,7 @@ export interface Profile {
 export const portfolioData: Profile = {
   name: "Portfolio Owner",
   titles: [
-    "Full Stack Web Developer",
+    "Full Stack Developer",
     "MERN Stack & Gen AI Developer",
     "React.js & Next.js Specialist",
     "Real-Time Application Architect",
