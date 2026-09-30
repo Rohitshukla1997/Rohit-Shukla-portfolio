@@ -55,7 +55,7 @@ export const portfolioData: Profile = {
     "Real-Time Application Architect",
   ],
   summary:
-    "Results-driven MERN Stack Developer specializing in the architecture and development of high-performance web applications. Proficient in React.js, Next.js, Node.js, and MongoDB, with advanced expertise in integrating WebSockets and geospatial APIs. Proven ability to engineer scalable solutions—including low-latency fleet management platforms, intelligent GPS tracking systems, and comprehensive business dashboards—that seamlessly translate complex real-time data into premium user experiences.",
+    "Results driven MERN Stack Developer specializing in the architecture and development of high performance web applications. Proficient in React.js, Next.js, Node.js, and MongoDB, with advanced expertise in integrating WebSockets and geospatial APIs. Proven ability to engineer scalable solutions including low latency fleet management platforms, intelligent GPS tracking systems, and comprehensive business dashboards that seamlessly translate complex real-time data into premium user experiences.",
   about:
     "Based in Nagpur, Maharashtra, I focus on full stack development to craft robust backend systems and dynamic frontends. With a strong foundation in React development and Node.js backend development, I have extensive experience architecting real-time applications. My background includes working heavily with REST APIs, real-time GPS telemetry, and complex mapping integrations to construct scalable web applications with smooth UX and precise data rendering.",
   email: "rohitsanjayshukla@gmail.com",
