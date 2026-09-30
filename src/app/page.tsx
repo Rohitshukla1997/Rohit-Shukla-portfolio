@@ -20,9 +20,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import {
-  portfolioData,
-} from "../data/portfolio";
+import { portfolioData } from "../data/portfolio";
 
 export default function Home() {
   const [activeTitle, setActiveTitle] = useState("");
@@ -148,7 +146,11 @@ export default function Home() {
               className="md:hidden p-2 text-foreground"
               aria-label="Toggle Menu"
             >
-              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMobileMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -160,11 +162,41 @@ export default function Home() {
           }`}
         >
           <nav className="flex flex-col p-6 space-y-4 text-center font-medium">
-            <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-cyan-500">About</a>
-            <a href="#experience" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-cyan-500">Experience</a>
-            <a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-cyan-500">Projects</a>
-            <a href="#skills" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-cyan-500">Expertise</a>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-cyan-500">Contact</a>
+            <a
+              href="#about"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="hover:text-cyan-500"
+            >
+              About
+            </a>
+            <a
+              href="#experience"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="hover:text-cyan-500"
+            >
+              Experience
+            </a>
+            <a
+              href="#projects"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="hover:text-cyan-500"
+            >
+              Projects
+            </a>
+            <a
+              href="#skills"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="hover:text-cyan-500"
+            >
+              Expertise
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="hover:text-cyan-500"
+            >
+              Contact
+            </a>
             <a
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -242,24 +274,29 @@ export default function Home() {
               </a>
             </motion.div>
           </div>
-          
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 100 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.2,
+              type: "spring",
+              stiffness: 100,
+            }}
             className="flex-1 w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-0 lg:-mr-10 xl:-mr-14 relative"
           >
             <div className="relative aspect-square rounded-[2rem] overflow-hidden border border-border shadow-2xl transform hover:scale-[1.02] hover:rotate-1 transition-all duration-500">
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-transparent mix-blend-overlay z-10 pointer-events-none"></div>
-              <Image 
-                src="/image/proimg.jpeg" 
-                alt="Rohit Shukla - MERN Stack Developer from Nagpur" 
-                fill 
+              <Image
+                src="/image/proimg.jpeg"
+                alt="Rohit Shukla - Full Stack Developer from Nagpur"
+                fill
                 priority
-                className="object-cover" 
+                className="object-cover"
               />
             </div>
-            
+
             {/* Decorative background glow */}
             <div className="absolute -inset-4 bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 blur-3xl -z-10 rounded-full opacity-60"></div>
           </motion.div>
@@ -284,8 +321,8 @@ export default function Home() {
                 </strong>
                 , I designed architectures to handle high-frequency mapping
                 telemetry and custom geo-processing algorithms. I build scalable
-                business applications with a client-first approach, taking performance and
-                reliability seriously.
+                business applications with a client-first approach, taking
+                performance and reliability seriously.
               </p>
             </div>
           </div>
@@ -493,7 +530,8 @@ export default function Home() {
                 Technical Expertise
               </h2>
               <p className="text-slate-700 dark:text-slate-300 text-sm font-light">
-                Architectural components, languages, and frameworks I leverage to build scalable systems.
+                Architectural components, languages, and frameworks I leverage
+                to build scalable systems.
               </p>
             </div>
 
@@ -509,7 +547,7 @@ export default function Home() {
                 >
                   {/* Subtle background glow on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent dark:from-cyan-500/5 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   <div className="relative z-10 space-y-6">
                     <div className="flex items-center gap-4">
                       <span className="p-3 rounded-xl bg-background border border-border text-foreground dark:text-cyan-400 shadow-[0_2px_10px_rgba(0,0,0,0.05)] dark:shadow-[0_2px_10px_rgba(6,182,212,0.1)] group-hover:scale-110 transition-transform duration-500">

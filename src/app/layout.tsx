@@ -17,16 +17,19 @@ const oswald = Oswald({ subsets: ["latin"], variable: "--font-title" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rohitshukla.vercel.app/"),
-  title: "Rohit Shukla | MERN Stack Developer | React, Next.js & Node.js",
+  title:
+    "Rohit Shukla | Full Stack Developer | React, Next.js, Node.js & AI Software Engineer",
   description:
-    "I am Rohit Shukla, a MERN Stack Developer from Nagpur. I specialize in building scalable, modern web applications using React.js, Next.js, Node.js, and MongoDB.",
+    "I am Rohit Shukla, a Full Stack Developer from Nagpur. I specialize in building scalable, modern web applications using React.js, Next.js, Node.js, and MongoDB.",
   keywords: [
     "Rohit Shukla",
-    "MERN Stack Developer",
     "Full Stack Developer",
+    "MERN Stack Developer",
+    "AI Software Engineer",
     "React.js Developer",
     "Next.js Developer",
     "Node.js Developer",
+    "Generative AI Engineer",
     "Nagpur",
     "MongoDB",
     "TypeScript",
@@ -45,9 +48,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rohit Shukla | MERN Stack Developer | React, Next.js & Node.js",
+    title:
+      "Rohit Shukla | Full Stack Developer | React, Next.js, Node.js & AI Software Engineer",
     description:
-      "I am Rohit Shukla, a MERN Stack Developer from Nagpur. I specialize in building scalable, modern web applications using React.js, Next.js, Node.js, and MongoDB.",
+      "I am Rohit Shukla, a Full Stack Developer from Nagpur. I specialize in building scalable, modern web applications using React.js, Next.js, Node.js, and AI Software Engineer.",
     url: "https://rohitshukla.vercel.app/",
     siteName: "Rohit Shukla Portfolio",
     locale: "en_IN",
@@ -57,15 +61,16 @@ export const metadata: Metadata = {
         url: "/image/proimg.jpeg",
         width: 800,
         height: 800,
-        alt: "Rohit Shukla - MERN Stack Developer",
+        alt: "Rohit Shukla - Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rohit Shukla | MERN Stack Developer | React, Next.js & Node.js",
+    title:
+      "Rohit Shukla | Full Stack Developer | React, Next.js, Node.js & AI Software Engineer",
     description:
-      "I am Rohit Shukla, a MERN Stack Developer from Nagpur. I specialize in building scalable, modern web applications using React.js, Next.js, Node.js, and MongoDB.",
+      "I am Rohit Shukla, a Full Stack Developer from Nagpur. I specialize in building scalable, modern web applications using React.js, Next.js, Node.js, and AI Software Engineer.",
     images: ["/image/proimg.jpeg"],
   },
   robots: {
@@ -90,10 +95,10 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Rohit Shukla",
-    jobTitle: "MERN Stack Developer",
+    jobTitle: "Full Stack Developer",
     url: "https://rohitshukla.vercel.app/",
     description:
-      "Rohit Shukla is a MERN Stack / Full Stack Developer specializing in React.js, Next.js, Node.js, Express.js and MongoDB.",
+      "Rohit Shukla is a Full Stack Developer specializing in React.js, Next.js, Node.js, Express.js and MongoDB and AI Software Engineer.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Nagpur",

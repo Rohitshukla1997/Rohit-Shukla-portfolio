@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Rohit Shukla | MERN Stack Developer",
+    name: "Rohit Shukla | Full Stack Developer | MERN Stack Developer",
     short_name: "Rohit Shukla",
-    description: "Personal developer portfolio of Rohit Shukla, a MERN Stack Developer specializing in scalable modern web applications.",
+    description:
+      "Personal developer portfolio of Rohit Shukla, a Full Stack Developer specializing in scalable modern web applications and AI Software Engineer.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
