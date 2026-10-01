@@ -715,6 +715,13 @@ export default function Home() {
                       />
                     </svg>
                   </a>
+                  <a
+                    href={portfolioData.tal}
+                    className="p-3 rounded-lg border border-border bg-secondary/40 text-slate-700 dark:text-slate-300 hover:text-foreground hover:border-slate-700 transition-all duration-300 flex items-center justify-center font-bold text-xs"
+                    aria-label="Tal Profile"
+                  >
+                    TAL
+                  </a>
                 </div>
               </div>
             </div>

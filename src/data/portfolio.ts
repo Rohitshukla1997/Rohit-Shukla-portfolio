@@ -40,6 +40,7 @@ export interface Profile {
   location: string;
   github: string;
   linkedin: string;
+  tal: string;
   experiences: Experience[];
   projects: Project[];
   skillsMatrix: SkillCategory[];
@@ -63,6 +64,7 @@ export const portfolioData: Profile = {
   location: "Nagpur, Maharashtra, India",
   github: "https://github.com/Rohitshukla1997",
   linkedin: "https://www.linkedin.com/in/rohit-shukla-221601218/",
+  tal: "https://tal.club/meet/rohit-shukla-2",
   experiences: [
     {
       role: "Full Stack Engineer",

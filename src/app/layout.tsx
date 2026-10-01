@@ -120,6 +120,7 @@ export default function RootLayout({
     sameAs: [
       "https://github.com/Rohitshukla1997",
       "https://www.linkedin.com/in/rohit-shukla-221601218/",
+      "https://tal.club/meet/rohit-shukla-2",
     ],
   };
 
